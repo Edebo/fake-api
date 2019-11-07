@@ -1,0 +1,19 @@
+{
+  "name": "typicode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json",
+    "dev": "nodemon json-server --watch db.json",
+    "server2": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "0.15.1",
+    "nodemon": "1.19.4"
+  }
+}

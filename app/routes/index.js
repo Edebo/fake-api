@@ -10,8 +10,14 @@ const { getRoutes,
 } = require('./groceristar')
 
 const { getFirstFiveRecipes } = require('./chickenKyiv')
+
 const { getGroceryCollection } = require('./showcase')
-const { getFile, getWriteFile, getWriteFiles  } = require('./files')
+
+
+
+// const { getFile, getWriteFile, getWriteFiles  } = require('./files')
+
+
 // @TODO tell me - does we need to pass db variable into our routes methods?
 module.exports = function (app, db) {
   // groceristar
@@ -29,8 +35,8 @@ module.exports = function (app, db) {
   getGroceryCollection(app, db)
   // chickenKyiv
   getFirstFiveRecipes(app, db)
-  // 
-  getFile(app, db)
-  getWriteFile(app, db)
-  getWriteFiles(app, db)
+  //
+  // getFile(app, db)
+  // getWriteFile(app, db)
+  // getWriteFiles(app, db)
 }
